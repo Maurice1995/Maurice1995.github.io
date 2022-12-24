@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta https-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
-  <meta name="robots" content="noindex">
   <link rel="stylesheet" type="text/css" href="../style.css">
   <title>M.P. 3D Design.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
 </head>
 
 <header>
@@ -43,15 +43,17 @@
   </div>
   <div class="image-container">
     <a style="order: 1" href="../TG-C.html" target="_self">
-      <img class="gears-image" src="../TG-C.PNG">
+      <img class="base-image" src="TG-C.PNG" onmouseover="changeImage1(1,this)" onmouseout="changeImage1(2,this)">
     </a>
     <br>
     <a style="order: 2" href="../TG-E.html" target="_self">
-      <img class="gears-image" src="../TG-E.PNG">
+      <img class="base-image" src="../TG-E.PNG" onmouseover="changeImage2(1,this)" onmouseout="changeImage2(2,this)">
+      <!-- <img class="top-image" src="../TG-E-shadow.png"> -->
     </a>
     <br>
     <a style="order: 3" href="../TG-I.html" target="_self">
-      <img class="gears-image" src="../TG-I.PNG">
+      <img class="base-image" src="../TG-I.PNG" onmouseover="changeImage3(1,this)" onmouseout="changeImage3(2,this)">
+      <!-- <img class="top-image" src="../TG-I-shadow.png"> -->
     </a>
   </div>
 </body>
