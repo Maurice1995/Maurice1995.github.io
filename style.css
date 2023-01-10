@@ -1,11 +1,11 @@
 .h1 {
   font-size: 2em;
-  color: grey;
+  color: #9E9E9E;
 }
 
 .header-Text {
   font-family: "Anton", sans-serif;
-  color: grey;
+  color: #9E9E9E;
   font-size: 55px;
   display: block;
   margin-left: 16px;
@@ -15,7 +15,7 @@
 
 .body {
   font-family: "Anton", sans-serif;
-  background-color: rgb(0, 0, 0);
+  background-color: #101223;
   max-width: max-content;
   margin: auto;
 }
@@ -41,7 +41,7 @@
 }
 
 .image-container {
-  background-color: rgb(0, 0, 0);
+  background-color: #282A3A;
   /* padding: 16px; */
   display: flex;
   /* position: relative; */
@@ -95,7 +95,7 @@
 
 .link {
   font-weight: bold;
-  color: grey;
+  color: #9E9E9E;
   text-decoration: none;
   margin-left: none;
   font-weight: none;
@@ -104,17 +104,17 @@
 
 a {
   text-decoration: none;
-  color: rgb(102, 102, 102);
+  color: #9E9E9E;
 }
 
 a:hover {
   text-decoration: underline;
-  color: white;
+  color: #e1e1e1;
   /* zoom: 150%; */
 }
 
 .text-highlight {
-  color: grey;
+  color: #9E9E9E;
   font-size: 40px;
   text-transform: capitalize;
   /* border: 2px solid red; */
@@ -122,7 +122,7 @@ a:hover {
 }
 
 .impressum {
-  color: grey;
+  color: #9E9E9E;
   font-size: 25;
   display: flex;
   align-self: flex-start;
@@ -134,7 +134,7 @@ a:hover {
 
 .paragraph {
   flex: auto;
-  color: grey;
+  color: #9E9E9E;
   font-size: 25;
   min-width: 33%;
   align-self: center;
