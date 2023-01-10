@@ -15,7 +15,7 @@
 
 .body {
   font-family: "Anton", sans-serif;
-  background-color: #101223;
+  background-color: #222222;
   max-width: max-content;
   margin: auto;
 }
@@ -41,7 +41,7 @@
 }
 
 .image-container {
-  background-color: #282A3A;
+  background-color: #343434;
   /* padding: 16px; */
   display: flex;
   /* position: relative; */
