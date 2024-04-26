@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>M.P. TG-E</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +14,13 @@
 
 <header>
   <div style="margin-top: 25px" class="nav-bar">
-    <!-- <h1 class="header-Text">
-      Maurice Pannard <br>
-      <span class="text-highlight">
-        mechatronics engineer
-      </span>
-    </h1> -->
     <div class="header-link-container">
-      <a class="header-link" href="../index.html" target="_self">Home</a> |
-      <a class="header-link" href="../TG-C.html" target="_self">TG-C</a> |
-      <a class="header-link" style="font-size:larger;  text-decoration: underline; color: white;" href="../TG-E.html"
+      <a class="header-link" href="index.html" target="_self">Home</a> |
+      <a class="header-link" href="TG-C.html" target="_self">TG-C</a> |
+      <a class="header-link" style="font-size:larger;  text-decoration: underline; color: white;" href="TG-E.html"
         target="_self">TG-E</a> |
-      <a class="header-link" href="../TG-I.html" target="_self">TG-I</a> |
-      <a class="header-link" href="../impressum.html" target="_self"> Impressum</a>
+      <a class="header-link" href="TG-I.html" target="_self">TG-I</a> |
+      <a class="header-link" href="impressum.html" target="_self"> Impressum</a>
     </div>
   </div>
 </header>
@@ -34,7 +28,7 @@
 <body class="body">
   <div style="text-align: center;" class="maintext">
     <p>
-    <h1 class="h1" style="text-align: center; color: white;">
+    <h1 class="h1" style="font-weight: normal; text-align: center; color: white;">
       Trusted Gateway - Energy
     </h1>
     <p style="color: grey;">This is the
@@ -53,7 +47,17 @@
       width="1024" height="768" mozallowfullscreen="true" frameborder="0" align-items="center" display="flex"
       justify-content="center" ;></iframe>
   </div>
-
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        const loaderWrapper = document.querySelector(".loader-wrapper");
+        loaderWrapper.style.display = "none";
+      }, 5000);  // 3 seconds delay
+    });
+  </script>
 </body>
 
 </html>

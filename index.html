@@ -5,57 +5,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" type="text/css" href="../style.css">
-  <title>M.P. 3D Design.</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>pannard.at</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <script src="script.js"></script>
 </head>
 
-<header>
-  <div class="nav-bar">
-    <h1 class="header-Text">
-      <a href="../impressum.html" target="_self"></a>
-      Riddle & Code <br>
-      </a>
-      <span class="text-highlight">
-        <a href="../impressum.html" target="_self">
-          Mechatronics Lab
-        </a>
-      </span>
-    </h1>
-    <!-- <div class="header-link-container">
-      <a class="header-link" style="font-size:larger; text-decoration: underline; color: white;" href="../index.html"
-        target="_self">Home</a> |
-      <a class="header-link" href="../TG-C.html" target="_self">TG-C</a> |
-      <a class="header-link" href="../TG-E.html" target="_self">TG-E</a> |
-      <a class="header-link" href="../TG-I.html" target="_self">TG-I</a>
-    </div> -->
-  </div>
-</header>
+
 
 <body class="body">
+  <!-- <header> -->
+
+  <!-- <div class="nav-bar">
+      <h1 class="header-Text">
+        <a href="../impressum.html" target="_self"></a>
+        Riddle & Code <br>
+        </a>
+        <span class="text-highlight">
+          <a href="../impressum.html" target="_self">
+            Mechatronics Lab
+          </a>
+        </span>
+      </h1>
+    </div> -->
+  <!-- </header> -->
   <div class="maintext">
     <br>
-    <h2 style="color: rgb(255, 255, 255);"> Select one of the images
+    <img class="Logo" src="Element 6Logo_white_capital_alpha.png" max-width="300px">
+    <br>
+    <h2> Select one of the images
     </h2>
+
   </div>
   <div class="image-container">
-    <a style="order: 1" href="/TG-C.html" target="_self">
+    <a style="order: 1" href="TG-C.html" target="_self">
       <img class="base-image" src="TG-C.PNG" onmouseover="changeImage1(1,this)" onmouseout="changeImage1(2,this)">
     </a>
     <br>
-    <a style="order: 2" href="/TG-E.html" target="_self">
-      <img class="base-image" src="/TG-E.PNG" onmouseover="changeImage2(1,this)" onmouseout="changeImage2(2,this)">
-      <!-- <img class="top-image" src="/TG-E-shadow.png"> -->
+    <a style="order: 2" href="TG-E.html" target="_self">
+      <img class="base-image" src="TG-E.PNG" onmouseover="changeImage2(1,this)" onmouseout="changeImage2(2,this)">
     </a>
     <br>
-    <a style="order: 3" href="/TG-I.html" target="_self">
-      <img class="base-image" src="/TG-I.PNG" onmouseover="changeImage3(1,this)" onmouseout="changeImage3(2,this)">
-      <!-- <img class="top-image" src="./TG-I-shadow.png"> -->
+    <a style="order: 3" href="TG-I.html" target="_self">
+      <img class="base-image" src="TG-I.PNG" onmouseover="changeImage3(1,this)" onmouseout="changeImage3(2,this)">
     </a>
   </div>
+
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        const loaderWrapper = document.querySelector(".loader-wrapper");
+        loaderWrapper.style.display = "none";
+      }, 1000);  // 3 seconds delay
+    });
+  </script>
 </body>
 
 </html>

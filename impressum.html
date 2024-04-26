@@ -4,12 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" type="text/css" href="../style.css">
-  <title>M.P. TG-I</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Contact me</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="contact.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("Y0-JQwlqLql8WxW0P");
+    })();
+  </script>
 </head>
 
 <header>
@@ -21,25 +31,49 @@
       </span>
     </h1> -->
     <div class="header-link-container">
-      <a class="header-link" href="../index.html" target="_self">Home</a> |
-      <a class="header-link" href="../TG-C.html" target="_self"> TG-C</a> |
-      <a class="header-link" href="../TG-E.html" target="_self">TG-E</a> |
-      <a class="header-link" href="../TG-I.html" target="_self">TG-I</a> |
+      <a class="header-link" href="index.html" target="_self">Home</a> |
+      <a class="header-link" href="TG-C.html" target="_self"> TG-C</a> |
+      <a class="header-link" href="TG-E.html" target="_self">TG-E</a> |
+      <a class="header-link" href="TG-I.html" target="_self">TG-I</a> |
       <a class="header-link" style="font-size:larger;  text-decoration: underline; color: white;"
-        href="../impressum.html" target="_self">Impressum</a>
+        href="impressum.html" target="_self">Impressum</a>
     </div>
   </div>
 </header>
 
 <body class="body">
-  <div style="text-align: center;" class="maintext">
-    <p>
-    <h1 class="header-Text">
-      Impressum
-    </h1>
+  <br>
+  <h1 class="h1" style="text-align: center; color: white;">
+    Contact form
+  </h1>
+  <br>
   </div>
-
-  <div class="impressum">
+  <div class="container border mt-3 bg-light">
+    <div class="row">
+      <div class="col-md-6 p-5 bg-dark text-white">
+        <h1>Hi there!</h1>
+        <h4 style="font-size: 10px">
+          Hi there! Are you looking for someone who can bring a unique blend of technical expertise and problem-solving skills to your project? Look no further! My name is Maurice Pannard, and I am a mechatronics engineer at Riddle & Code. With a background in both mechanical and electrical engineering, I have a diverse set of skills that allow me to tackle complex challenges with ease. If you have a project that could benefit from my expertise, don't hesitate to reach out to me. I'm always up for a new challenge and excited to work with like-minded individuals to push the boundaries of what's possible.
+        </h4>
+      </div>
+      <div class="col-md-6 border-left py-3">
+        <div class="form-group">
+          <h5 for="name">Name</h5>
+          <input type="text" class="form-control" id="name" placeholder="Enter name" />
+        </div>
+        <div class="form-group">
+          <h5 for="email">Email</h5>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" />
+        </div>
+        <div class="form-group">
+          <h5 for="message">Message</h5>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <button class="btn btn-dark" onclick="sendMail()">Submit</button>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="impressum">
     <div style="order: 2" class="footer-link-container">
       <a class="footer-link" href="https://github.com/Maurice1995" target="_blank"> Github </a> |
       <a class="footer-link" href="https://www.riddleandcode.com/" target="_blank"> Riddle </a> |
@@ -62,13 +96,20 @@
         style="width: 90%; min-height:150px; margin:5px; border-radius: 3px;" style="border:0;" allowfullscreen=""
         loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
-
     </div>
+
+  </div> -->
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
   </div>
-
-
-
-
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        const loaderWrapper = document.querySelector(".loader-wrapper");
+        loaderWrapper.style.display = "none";
+      }, 500);  // 3 seconds delay
+    });
+  </script>
 </body>
 
 </html>
