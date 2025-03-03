@@ -79,13 +79,16 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid red; */
-  /* min-width: 410px; */
+  padding: 1rem 0;
+  background-color: rgb(33, 33, 33);
+  width: 100%;
+  margin-bottom: 1.5rem;
 }
 
 .header-link-container {
   font-family: "Anton", sans-serif;
-  /* border: 2px solid red; */
+  display: flex;
+  gap: 2rem;
 }
 
 .footer-link-container {
@@ -98,12 +101,16 @@ h2 {
 
 .header-link {
   font-style: normal;
-  color: rgb(102, 102, 102);
+  color: rgb(180, 180, 180);
   text-decoration: none;
-  margin-left: 16px;
-  margin-right: 16px;
+  padding: 0.5rem 1rem;
   font-weight: 700;
-  /* border: 2px solid red; */
+  transition: color 0.3s ease;
+}
+
+.header-link:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .footer-link {
