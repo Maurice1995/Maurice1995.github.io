@@ -84,6 +84,19 @@ h2 {
   flex-direction: row;
 }
 
+.bio-text {
+  line-height: 1.6;
+  max-width: 650px;
+  margin-top: 20px;
+  color: #d0d0d0;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+.bio-text p {
+  margin-bottom: 1rem;
+}
+
 .nav-bar {
   display: flex;
   flex-direction: row;
