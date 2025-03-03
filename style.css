@@ -24,7 +24,7 @@
 
 .header-link {
   font-family: 'Inter', 'Roboto', sans-serif;
-  color: rgb(180, 180, 180) !important;
+  color: rgb(180, 180, 180);
   transition: color 0.3s ease;  
   font-size: 16px;
   font-weight: 500; /* Medium weight */
