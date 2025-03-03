@@ -24,6 +24,8 @@
 
 .header-link {
   font-family: 'Inter', 'Roboto', sans-serif;
+  color: rgb(180, 180, 180) !important;
+  transition: color 0.3s ease;  
   font-size: 16px;
   font-weight: 500; /* Medium weight */
   letter-spacing: 0.2px;
@@ -128,7 +130,11 @@ h2 {
 
 .header-link:hover {
   text-decoration: none;
-  color: white;
+  color: white !important;
+}
+
+.header-link.active {
+  color: white !important;
 }
 
 .footer-link {
