@@ -15,7 +15,7 @@
 
 .header-Text {
   font-family: 'Inter', 'Roboto', sans-serif; /* Modern, clean font */
-  color: #f0f0f0; /* Brighter, more legible color */
+  color: white; /* Brighter, more legible color */
   font-size: 42px;
   font-weight: 600; /* Semi-bold instead of heavy */
   letter-spacing: -0.5px; /* Tighter letter spacing */
